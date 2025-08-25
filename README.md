@@ -4,5 +4,5 @@
 | Integrante | Descripción | Correo | 
 |-------|----------|----------|  
 | Andrés Landeo | Leader | andres.landeo@upch.pe |  
-| Nicolás Vásquez   | Writer   |  |
+| Nicolás Vásquez   | Writer   | nicolas.vasquez@upch.pe |
 | Luis Galván | Reviewer |  | 
