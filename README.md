@@ -1,6 +1,6 @@
 # <ins>Introducción a Señales Biomédicas</ins>
 
-![GIF](https://i.gifer.com/7JXS.gif)
+![GIF]([https://i.gifer.com/7JXS.gif](https://elbruno.com/wp-content/uploads/2016/07/2016-07-29-myo-emg.gif))
 
 ## <ins>Grupo 09 / Ciclo 2025-II📚</ins>
 
