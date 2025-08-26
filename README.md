@@ -16,7 +16,7 @@ Somos estudiantes de la carrera de Ingeniería Biomédica PUCP-UPCH desarrolland
 | Andrés Nicolas Landeo Cruzado  | Nicolás Alejandro Vásquez Carrillo | Luis Fernando Galván Nuñez | 
 |-------|----------|----------|  
 | 📧 andres.landeo@upch.pe | 📧 nicolas.vasquez@upch.pe | 📧 luis.galvan@upch.pe |  
-| <img src="Otros/Andres.jpg" width='150' height='200'/> | <img src="Otros/pfp.jpg" width='150' height='200'>/| <img src="Otros/Luis.jpeg" width='150' height='200'/> |
+| <img src="Otros/Andres.jpg" width='150' height='200'/> | <img src="Otros/pfp.jpg" width='150' height='200'>/| <img src="Otros/Luis.jpeg" width='150' height='180'/> |
 | Me presento como estudiante de 7mo ciclo cuyas áreas de interés son la Ingeniería Clínica, Biomecánica y la concentración de Señales e Imágenes. En el curso tengo las expectativas en aprender las distintas técnicas para identificar y manejar señales de todo tipo, además de tener la experiencia de aplicarlas en la vida laboral. | Me presento. Soy Nicolás, estudiante de 8vo ciclo de la carrera, tengo interés en varias areas de la carrera pero mi interesa mucho más el poder brindar un servicio, a través del área donde me enfoque, correcto al paciente. Tengo mucha expectativa por aprender señales biomédicas por la importancia dentro del campo de la salud como lo complejas y llamativas que pueden llegar a ser.  | Soy un estudiante de 7mo ciclo, y con interés general en ingeniería biomédica. Tengo la expectativa de poder familiarizarme más con los procesos de diseño, aprender sobre las tecnologías actuales y pasadas, conocer distintos modelos del funcionamiento del organismo, e integrar los aprendizajes de ciclos pasados. | 
 
 ### Docentes del curso 🧑‍🏫
