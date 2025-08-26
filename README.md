@@ -1,6 +1,8 @@
 # <ins>Introducción a Señales Biomédicas</ins>
 
+<p align="center">
 ![GIF](https://i.gifer.com/7JXS.gif)
+</p>
 ## <ins>Grupo 09 / Ciclo 2025-II📚</ins>
 
 ## ¿Quienes somos?
