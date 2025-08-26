@@ -1,7 +1,7 @@
 <h1 align="center"><ins>Grupo 09 / Ciclo 2025-II </ins></h1>
 
 <p align="center">
-  <img src="Otros/2016-07-29-myo-emg_thumb.gif"  width="400"/>
+  <img src="Otros/2016-07-29-myo-emg_thumb.gif"/>
 </p>
 
 ¡Sean bienvenidos a nuestro repositorio!😁🙌 En este espacio como grupo nos encargaremos de brindarles toda la información con respecto al curso como actividades de laboratorio y avances de proyecto realizados en el curso durante el ciclo vigente.
