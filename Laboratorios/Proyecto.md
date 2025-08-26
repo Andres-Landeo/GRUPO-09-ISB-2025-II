@@ -19,4 +19,6 @@ levantamiento de pesas de 1, 2 hasta 3 kg, diferenciando entre una correcta e in
 ayude a diferencia entre una correcta y una incorrecta ejecución
 
 ## <ins> Herramientas a utilizar </ins>  ## 
+Para este proyecto se ha contemplado el uso del dispositivo BITalino, con conexión Bluetooth a PC, para la captura de imagenes electromiográficas durante los ejercicios, uso de un filtrado simple para mejorar la calidad de las señales y el diseño de un clasificador con el cual diferenciar si se está haciendo un correcto 
+movimiento de acuerdo al peso. Respecto a este último se realizará el clasficador de manera manual, pero nos gustaría realizar una implementación de alguna clase Machine Learning si es que lo vemos realizable.
 
