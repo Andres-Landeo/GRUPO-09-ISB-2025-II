@@ -9,7 +9,7 @@ Somos estudiantes de la carrera de Ingeniería Biomédica PUCP-UPCH desarrolland
 | Andrés Nicolas Landeo Cruzado  | Nicolás Alejandro Vásquez Carrillo | Luis Fernando Galván Nuñez | 
 |-------|----------|----------|  
 | 📧 andres.landeo@upch.pe | 📧 nicolas.vasquez@upch.pe | 📧  |  
-| ![Foto](Andres.jpg) | [Foto] | [Foto] |
+| <img src="Andres.jpg" width='250' height='300'/>| [Foto] | [Foto] |
 | Descripción | Descripción | Descripción | 
 
 ## Docentes del curso 🧑‍🏫
