@@ -1,7 +1,7 @@
 <h1 align="center"><ins> Clasificador de señal EMG para reconocer la correcta ejecución del ejercicio de levantar pesas en adultos mayores </ins></h1>
 
 <p align="center">
-  <img src="Otros/Old Couple.jpeg"/>
+  <img src="Otros/Old couple.jpg"/>
 </p>
 
 Dentro del contexto de la salud enfocada al adulto mayor, el ejercicio brinda enormes beneficios a corto y largo plazo. No solo mejora existe una correcta estimulación
@@ -19,3 +19,4 @@ levantamiento de pesas de 1, 2 hasta 3 kg, diferenciando entre una correcta e in
 ayude a diferencia entre una correcta y una incorrecta ejecución
 
 ## <ins> Herramientas a utilizar </ins>  ## 
+
