@@ -1,5 +1,5 @@
 ## <ins>Aporte de los integrantes</ins>
-- **Andrés Landeo:**
-- **Nicolás Vasquez:**
-- **Luis Galvan:**
-- **Diego Munayco:** **25%**
+- **Andrés Landeo: 25%**
+- **Nicolás Vasquez: 30%**
+- **Luis Galvan: 10%**
+- **Diego Munayco: 35%**
