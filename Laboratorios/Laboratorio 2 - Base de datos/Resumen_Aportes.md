@@ -2,4 +2,4 @@
 - **Andrés Landeo:**
 - **Nicolás Vasquez:**
 - **Luis Galvan:**
-- **Diego Munayco:**
+- **Diego Munayco:** **25%**
