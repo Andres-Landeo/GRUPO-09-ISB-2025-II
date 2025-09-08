@@ -1,31 +1,31 @@
 # **Reporte de laboratorio 3 - Señales EMG**
 
-## **1. Introducción**
+# **1. Introducción**
 
-## **2. Objetivos**
+# **2. Objetivos**
 
-## **3. Materiales**
+# **3. Materiales**
 
-## **4. Procedimiento**
+# **4. Procedimiento**
 
-### **4.1. Bíceps braquial**
+## **4.1. Bíceps braquial**
 
-**- Conexión de electrodos**
+### **- Conexión de electrodos**
 Descripción
 
-**- Prueba 1**
+### **- Prueba 1**
 Descripción prueba 1
 
-**- Prueba 2**
+### **- Prueba 2**
 Descripción prueba 2
 
-**- Prueba 3**
+### **- Prueba 3**
 Descripción prueba 3
 
-### **4.2. Abductor del pulgar**
+## **4.2. Abductor del pulgar**
 
-### **4.3. Trapecio descendente (superior)**
+## **4.3. Trapecio descendente (superior)**
 
-## **5. Resultados**
+# **5. Resultados**
 
-## **6. Referencias**
+# **6. Referencias**
