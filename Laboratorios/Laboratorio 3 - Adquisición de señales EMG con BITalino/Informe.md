@@ -1,19 +1,17 @@
-# <ins>Reporte de laboratorio 3 - Señales EMG</ins>
+# **Reporte de laboratorio 3 - Señales EMG**
 
-**Tabla de contenidos**
+## **1. Introducción**
 
-**1. Introducción**
+## **2. Objetivos**
 
-**2. Objetivos**
+## **3. Materiales**
 
-**3. Materiales**
-
-**4. Procedimiento**
+## **4. Procedimiento**
 
 4.1. Bíceps
 
 4.2. Abductor del pulgar
 
-**5. Resultados**
+## **5. Resultados**
 
-**6. Referencias**
+## **6. Referencias**
