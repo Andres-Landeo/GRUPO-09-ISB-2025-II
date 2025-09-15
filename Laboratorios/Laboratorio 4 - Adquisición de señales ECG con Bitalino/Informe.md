@@ -17,7 +17,7 @@ En este caso, se usarán 3 electrodos, que permitirán visualizar las derivacion
 Dependiendo de la derivación y la cantidad de ruido, se podrá observar:
 
 <p align="center">
-  <img src="Imágenes/Grafica ECG raw.jpeg" width='300' height='200'>
+  <img src="Imágenes/Grafica ECG raw.jpeg" width='500' height='400'>
 </p>
 
 En esta actividad visualizaremos el ECG en reposo, con aguante de respiración, y finalmente tras actividad física prolongada.
