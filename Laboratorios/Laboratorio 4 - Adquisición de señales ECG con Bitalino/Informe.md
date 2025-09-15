@@ -47,10 +47,15 @@ Los momentos a evaluar en el sujeto son los siguientes:
 - **Evaluación post actividad aeróbica (1 vez)**
 
 ## **Conexión de electrodos**
-<p align="right">
-  <img src="Imágenes/Posicion electrodos.jpeg" alt="Imagen" width="300" height="250" style="float:right; margin-left:10px;">
-  Para esta práctica, posicionamos los electrodos la forma en como se ve en la imagen; el electrodo del canal negativo va conectado en la muñeca derecha, el electrodo del canal positivo conectado en la muñeca izquierda, mientras que el electrodo de referencia va posicionado a la altura de la cresta iliaca.
+<div style="display: flex; align-items: center;">
+
+<img src="Imágenes/Posicion electrodos.jpeg" alt="ECG" width="300" height="250"  style="margin-right: 20px;"/>
+
+<p>
+Para esta práctica, posicionamos los electrodos la forma en como se ve en la imagen; el electrodo del canal negativo va conectado en la muñeca derecha, el electrodo del canal positivo conectado en la muñeca izquierda, mientras que el electrodo de referencia va posicionado a la altura de la cresta iliaca.
 </p>
+
+</div>
 
 La razón por la que se escogió está conexión en las muñecas ya que permiten captar la diferencia de potencial generada por la actividad eléctrica cardíaca, sabiendo que los brazos son puntos distales y alejados del corazón, permite registrar una señal que representa la suma de vectores eléctricos generados durante cada latido [1], y de la misma forma se confirma como recomiende la guia del American Heart Association [2].
 
