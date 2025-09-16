@@ -115,7 +115,7 @@ La razón por la que se escogió está conexión en las muñecas ya que permiten
 ![Señal ECG](Gráficas/ECG_prueba3.png)
 
 ### **5.4 Interpretación de resultados**
-
+Nya aa
 
 ## **6. Referencias**
 - [1] *Farrell, R. M., Syed, A., Syed, A., & Gutterman, D. D. (2008). Effects of limb electrode placement on the 12- and 16-lead electrocardiogram. Journal of Electrocardiology, 41(6), 536–545.* 
