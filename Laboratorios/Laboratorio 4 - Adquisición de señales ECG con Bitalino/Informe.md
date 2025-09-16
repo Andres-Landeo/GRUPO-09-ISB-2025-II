@@ -105,10 +105,10 @@ La razón por la que se escogió está conexión en las muñecas ya que permiten
 ![Señal ECG](Gráficas/ECG_prueba1.png)
 
 ### **5.2. Prueba 2: Contención de aire (30 seg) y descanso (1 min)**
-## **5.2.1 Contención de aire**
+#### **5.2.1 Contención de aire**
 ![Señal ECG](Gráficas/ECG_prueba2.1.png)
 
-### **5.2.2 Descanso post contención de aire**
+#### **5.2.2 Descanso post contención de aire**
 ![Señal ECG](Gráficas/ECG_prueba2.2.png)
 
 ### **5.3. Prueba 3: Post Actividad física aeróbica**
