@@ -115,9 +115,15 @@ La razón por la que se escogió está conexión en las muñecas ya que permiten
 ![Señal ECG](Gráficas/ECG_prueba3.png)
 
 ### **5.4 Interpretación de resultados**
-Nya aa
+Para la interpretación de los resultados de estas 4 gráficas se realizó una busqueda de bibliografía relevante que demuestre las principales caracteristicas de los resultados encontrados, logrando de esta manera, hallar una sustentación científica a la respuesta de las señales del ECG que logramos graficar en el apartado anterior. Para este analisis e interpretación se consultó con 3 papers enfocados a la toma de señales ECG antes, durante y después de esfuerzo físico, enfocandonos en tanto los resultados que se hallaron en los 3 momentos como en los diferentes cambios encontrados entre cada etapa, de esta manera, se logró encontrar caracteristicas y elementos claves para la comparación entre nuestras señales con las brindadas en los papers. Los estudios en lo que nos hemos basado este analisis fueron: *Novel Signal Processing Method for Exercise ECG*, *Gradual Changes of ECG Waveform During and After Exercise in Normal Subjects* y *ECG Authentication in Post-Exercise Situation*.
+
+**Prueba 1 - Gráficas de Réposo:**
+Se puede apreciar un ritmo regular, tanto las ondas P, QRS y T se encuentran bien definidas y lo importante es que se logra observar una frecuencia cardíaca estable. La gráfica de espectro de potencia muestra una mayor energía durante frecuencias bajas, la cual es una carácteristica muy común de ECG que se encuentra en estado de reposo. Contrastando con la literatura, de acuerdo con *Sung et al.* (2017) la condición de reposo es la más estable para la realización de un análisis biométrico, ya que la morfología del ECG se mantiene constante, no demuestra perturbaciones relevantes que generen ruido en la señal [4]. Por otro lado, *Simoons & Hugenholtz* (1975) menciona que el estado de reposo es normalmente tomado como linea basal para la comparación de los cambios inducidos en la señal a causa del ejercicio. 
 
 ## **6. Referencias**
 - [1] *Farrell, R. M., Syed, A., Syed, A., & Gutterman, D. D. (2008). Effects of limb electrode placement on the 12- and 16-lead electrocardiogram. Journal of Electrocardiology, 41(6), 536–545.* 
 - [2] *Kligfield, P., Gettes, L. S., Bailey, J. J., Childers, R., Deal, B. J., Hancock, E. W., van Herpen, G., Kors, J. A., Macfarlane, P., Mirvis, D. M., Pahlm, O., Rautaharju, P., & Wagner, G. S. (2007). Recommendations for the Standardization and Interpretation of the Electrocardiogram. Circulation, 115(10), 1306–1324.*
 - [3] *Zyout, A. A., Alquran, H., Mustafa, W. A., & Alqudah, A. M. (2023). Advanced time-frequency methods for ecg waves recognition. Diagnostics, 13(2), 308.*
+- [4] *Sung D, Yoo H, Lee J, Lee M. ECG authentication in post-exercise situation. Conf Proc IEEE Eng Med Biol Soc. 2017;2017:4522-5*
+- [5] *Simoons ML, Hugenholtz PG. Gradual changes of ECG waveform during and after exercise in normal subjects. Circulation. 1975;52(4):570-7.*
+- [6] *Kaiser W, Findeis M. Novel signal processing methods for exercise ECG. Comput Cardiol. 2000;27:71-8.*
