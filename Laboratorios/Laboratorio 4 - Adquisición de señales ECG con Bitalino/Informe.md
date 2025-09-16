@@ -57,9 +57,6 @@ La razón por la que se escogió está conexión en las muñecas ya que permiten
 
 ## **4.1. Prueba 1: Reposo**
 
-|  **Dedo en reposo**  | **Dedo sin oposición** | **Dedo con oposición** |
-|:------------:|:---------------:|:------------:|
-|<video src="Videos/Reposo.mp4">|<video src="Videos/Contencion aire.mp4">|<video src="Videos/Descanso.mp4">|
 
 ## **4.2. Prueba 2: Contención de aire (30 seg) y descanso (1 min)**
 ## **4.2.1 Contención de aire**
