@@ -1,0 +1,67 @@
+# **Reporte de laboratorio 4 - Señales ECG**
+
+## **1. Introducción**
+
+
+## **2. Objetivos**
+
+
+## **3. Materiales**
+
+| <img src="Imágenes/Bitalino.jpeg"/> | <img src="Imágenes/Cable electrodos.jpeg"/> | <img src="Imágenes/Electrodos.jpeg"/> | <img src="Imágenes/Laptop.jpeg"/> |
+|----------|----------|----------|----------|
+| **Un kit BITalino** | **Conector bipolar para electrodos** | **3 electrodos** | **Laptop con software Open Signals** |
+
+## **4. Procedimiento**
+
+
+### **4.1 Conexión de electrodos**
+
+
+### **4.2 Pruebas**
+
+
+## **5. Resultados**
+En EEG de reposo y tareas cognitivas se busca preservar las bandas canónicas (δ, θ, α, β, γ baja) y suprimir deriva lenta y EMG de alta frecuencia; por eso se aplica un pasa-banda ≈0.5–45/48 Hz, práctica empleada y recomendada en estudios actuales de análisis EEG para tareas cognitivas y reposo. Ejemplo reciente: un protocolo de atención/distraicción usa 0.5–45 Hz antes del análisis espectral y la corrección de artefactos [1]. Además, revisiones metodológicas modernas describen este rango y el papel del preprocesado (filtrado + limpieza) como paso estándar antes de extraer potencia por bandas [2]. 
+Respecto al ruido de red (50/60 Hz), puede atenuarse con un notch solo si el pico está presente; existen alternativas (p. ej., spectrum interpolation) que evitan distorsiones que el notch puede introducir. La literatura metodológica lo discute y propone procedimientos específicos para eliminar la línea con menor sesgo [3].
+Cuando se comparan condiciones (p. ej., ojos abiertos vs. cerrados; reposo vs. tarea), la potencia relativa —potencia de banda dividida por la potencia total (p. ej., 0.5–48 Hz)— reduce la variabilidad inter-sujeto debida a impedancias y ganancias y resalta cambios proporcionales entre estados. En tareas cognitivas se usa explícitamente para mitigar las diferencias entre sujetos y mejorar la comparabilidad [4], y su definición formal (band/total) está estandarizada en la literatura [5]. 
+Aplicada al paradigma clásico ojos abiertos vs. cerrados, la potencia α relativa disminuye con ojos abiertos y aumenta con ojos cerrados, efecto documentado en estudios recientes de reposo (EO/EC) y que justifica reportar α en forma relativa para comparaciones entre condiciones/sujetos [6].
+
+### **5.1. Gráficas obtenidas**
+#### **5.1.1 Prueba 1 - Basal 1: EEG en reposo**
+![Señal EEG](Gráficas/EEG_1.png)
+
+#### **5.1.2 Prueba 2 - Basal 2: EEG en reposo y vista punto fijo**
+![Señal EEG](Gráficas/EEG_2.png)
+
+#### **5.1.3 Prueba 3 - Tarea cognitiva: EEG restar 7 desde 100**
+![Señal EEG](Gráficas/EEG_3.png)
+
+#### **5.1.4 Prueba 4 - Artefactos: EEG arterfacto cada 2 segundos**
+![Señal EEG](Gráficas/EEG_4.png)
+
+#### **5.1.5 Prueba 5 - Libre: EEG escuchar música suave a potente**
+![Señal EEG](Gráficas/EEG_5.png)
+
+### **5.2. Comparación potencia α en ojos abiertos vs. cerrados**
+![Señal EEG](Gráficas/2_Comp_ojos_alfa.png)
+
+### **5.3. Comparación potencia α en ojos abiertos vs. cerrados**
+![Señal EEG](Gráficas/3_Evaluar_inc_beta.png)
+
+### **5.4. Comparación potencia α en ojos abiertos vs. cerrados**
+![Señal EEG](Gráficas/4_Contar_artefactos_1.png)
+![Señal EEG](Gráficas/4_Contar_artefactos_2.png)
+
+## **6. Referencias**
+[1] P. Kaushik et al., “Decoding the cognitive states of attention and distraction in a sustained-attention task using EEG,” Sci. Rep., 2022 — usa band-pass 0.5–45 Hz en el preprocesado. 
+
+[2] A. Chaddad et al., “Electroencephalography Signal Processing,” Biomedicines, 2023 — revisión metodológica: filtrado y PSD (Welch) en EEG. 
+
+[3] S. Leske and S. S. Dalal, “Reducing power line noise in EEG and MEG via spectrum interpolation,” NeuroImage, 2019 — alternativas al notch y cautelas sobre distorsiones. 
+
+[4] Q. Zhou et al., “Relative Power Correlates With the Decoding Performance of Motor Imagery-Based BCI,” Front. Hum. Neurosci., 2021 — la potencia relativa reduce variabilidad inter-sujeto en comparaciones. 
+
+[5] Y. Wang et al., “Relative Power of Specific EEG Bands and Their Ratios in Attention-Deficit/Hyperactivity Disorder,” Front. Hum. Neurosci., 2016 — definición y cálculo de potencia relativa (band/total).
+
+[6] N. M. Petro et al., “Eyes-closed versus eyes-open differences in spontaneous human brain activity,” NeuroImage, 2022 — α relativa menor en ojos abiertos que en cerrados. 
