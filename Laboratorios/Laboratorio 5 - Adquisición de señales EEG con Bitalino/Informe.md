@@ -42,8 +42,41 @@ Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo m
 | **Posición Fp1 y Fp2 para comparar hemisferios frontales** | **Posición O2 para actividad visual** |
 
 ### **4.2 Pruebas**
+<table>
+    <thead>
+        <tr>
+            <th align="center">Reposo</th>
+            <th align="center"> Fijar vista</th>
+            <th align="center"> Ejercicio cognitivo</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan=2  align="center">Reposo</td>
+        <td align="center">Contención de aire</td>
+        <td align="center">Descanso post contención de aire</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="Imágenes/MiradaFija.png" width='150' height='100' ></td>
+        <td align="center"><img src="Imágenes/Concentración.png" width='150' height='100'></td>
+      </tr>
+    </tbody>
+</table>
 
-
+<table>
+    <thead>
+        <tr>
+            <th align="center"> Masticación cada 2 segundos</th>
+            <th align="center"> Actividad libre</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">Actividad física</td>
+        <td align="center">Descanso</td>
+      </tr>
+    </tbody>
+</table>
 
 ## **5. Resultados**
 <p align="justify">
