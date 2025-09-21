@@ -1,15 +1,20 @@
 # **Reporte de laboratorio 5 - Señales EEG**
 
 ## **1. Introducción**
-Un electroencefalograma (EEG) es un estudio que mide la actividad eléctrica cerebral empleando electrodos, con el fin de apoyar al diagnóstico de trastornos neuronales.
-Usualmente para distribución de los electrodos en las mediciones, se utiliza el sistema 10-20 la cual es una metodología que distribuye los puntos de colocación de electrodos, separandolos del 10% o 20% entre cada uno con respecto a la longitud calculada (del nasion al inion).
+<p align="justify">
+  Un electroencefalograma (EEG) es un estudio que mide la actividad eléctrica cerebral empleando electrodos, con el fin de apoyar al diagnóstico de trastornos neuronales.
+  Usualmente para distribución de los electrodos en las mediciones, se utiliza el sistema 10-20 la cual es una metodología que distribuye los puntos de colocación de electrodos, separandolos del 10% o 20% entre cada uno con respecto a la longitud calculada (del nasion al inion).
 
-Las oscilaciones en el potencial eléctrico del cerebro se categorizan en diferentes bandas de frecuencias: 
-- **Bandas Delta**: Esta banda aparece en la región de los lóbulos temporal y parietal y tiene una amplitud significativa, además de tener una frecuencia característica de 0.5 Hz a 4 Hz. Representan un estado de sueño profundo, neuroisquemia, hipotermia profunda y plano profundo de anestesia.
-- **Bandas Theta**: Esta banda aparece en la adolescencia y se relaciona con las emociones y el estado mental, además de ser más evidente en adultos con emociones negativas. Esta tiene una frecuencia característica de 4 Hz a 8 Hz. Describe al individuo en estado de somnolencia, con leve depresión bioeléctrica cortical.
-- **Bandas Alfa**:  Esta banda aparece en la parte posterior del cerebro y a ambos lados, además de ser la onda con la frecuencia más alta que puede leerse en un EEG teniendo como rango frecuencias de 8 a 13 Hz. Representa que el sujeto se encuentra en un estado de calma, ojos cerrados, consciente.
-- **Bandas Beta**: Esta banda aparece en ambos hemisferios cuando la corteza cerebral está más excitada bajo un nivel de estrés alto y ronda frecuencias entre  13 Hz a 30 Hz. Demuestra que el sujeto se somete a una etapa de concentración y la actividad mental activa. 
-- **Bandas Gamma** :  Esta banda tiene las frecuencias más altas, mayores a 30 Hz, y se relacionan con procesos cognitivos complejos, como el procesamiento de información, la resolución de problemas y el aprendizaje; en otras palabras una actividad cerebral incrementada.
+  Las oscilaciones en el potencial eléctrico del cerebro se categorizan en diferentes bandas de frecuencias: 
+  - **Bandas Delta**: Esta banda aparece en la región de los lóbulos temporal y parietal y tiene una amplitud significativa, además de tener una frecuencia característica de 0.5 Hz a 4 Hz. Representan un estado de sueño profundo, neuroisquemia, hipotermia profunda y plano profundo de anestesia.
+  - **Bandas Theta**: Esta banda aparece en la adolescencia y se relaciona con las emociones y el estado mental, además de ser más evidente en adultos con emociones negativas. Esta tiene una frecuencia característica de 4 Hz a 8 Hz. Describe al individuo en estado de somnolencia, con leve depresión bioeléctrica cortical.
+  - **Bandas Alfa**:  Esta banda aparece en la parte posterior del cerebro y a ambos lados, además de ser la onda con la frecuencia más alta que puede leerse en un EEG teniendo como rango frecuencias de 8 a 13 Hz. Representa que el sujeto se encuentra en un estado de calma, ojos cerrados, consciente.
+  - **Bandas Beta**: Esta banda aparece en ambos hemisferios cuando la corteza cerebral está más excitada bajo un nivel de estrés alto y ronda frecuencias entre  13 Hz a 30 Hz. Demuestra que el sujeto se somete a una etapa de concentración y la actividad mental activa. 
+  - **Bandas Gamma** :  Esta banda tiene las frecuencias más altas, mayores a 30 Hz, y se relacionan con procesos cognitivos complejos, como el procesamiento de información, la resolución de problemas y el aprendizaje; en otras palabras una actividad cerebral incrementada.
+  <p align="center">
+    <img src="Imágenes/Bandas.jpeg" width='400' height='300'/>
+  </p>
+</p>
 
 ## **2. Objetivos**
 - Adquisición de señales de EEG, utilizando el kit BiTalino: Evaluación en diferentes momentos donde el cerebro trabaja.
@@ -37,6 +42,7 @@ Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo m
 | **Posición Fp1 y Fp2 para comparar hemisferios frontales** | **Posición O2 para actividad visual** |
 
 ### **4.2 Pruebas**
+
 
 
 ## **5. Resultados**
