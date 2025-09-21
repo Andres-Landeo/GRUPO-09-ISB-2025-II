@@ -23,30 +23,27 @@
 
 ## **5. Resultados**
 <p align="justify">
-  En EEG de reposo y tareas cognitivas se busca preservar las bandas canónicas (δ, θ, α, β, γ baja) y suprimir deriva lenta y EMG de alta frecuencia; por eso se aplica un pasa-banda ≈0.5–45/48 Hz, práctica empleada y recomendada en estudios actuales de análisis EEG para tareas cognitivas y reposo. Ejemplo reciente: un protocolo de atención/distraicción usa 0.5–45 Hz antes del análisis espectral y la corrección de artefactos [1D]. Además, revisiones metodológicas modernas describen este rango y el papel del preprocesado (filtrado + limpieza) como paso estándar antes de extraer potencia por bandas [2D]. 
-
+  En EEG de reposo y tareas cognitivas se busca preservar las bandas canónicas (δ, θ, α, β, γ baja) y suprimir deriva lenta y EMG de alta frecuencia; por eso se aplica un pasa-banda ≈0.5–45/48 Hz, práctica empleada y recomendada en estudios actuales de análisis EEG para tareas cognitivas y reposo. Ejemplo reciente: un protocolo de atención/distraicción usa 0.5–45 Hz antes del análisis espectral y la corrección de artefactos [1D]. Además, revisiones metodológicas modernas describen este rango y el papel del preprocesado (filtrado + limpieza) como paso estándar antes de extraer potencia por bandas [2D].
   Respecto al ruido de red (50/60 Hz), puede atenuarse con un notch solo si el pico está presente; existen alternativas (p. ej., spectrum interpolation) que evitan distorsiones que el notch puede introducir. La literatura metodológica lo discute y propone procedimientos específicos para eliminar la línea con menor sesgo [3D].
-
-  Cuando se comparan condiciones (p. ej., ojos abiertos vs. cerrados; reposo vs. tarea), la potencia relativa —potencia de banda dividida por la potencia total (p. ej., 0.5–48 Hz)— reduce la variabilidad inter-sujeto debida a impedancias y ganancias y resalta cambios proporcionales entre estados. En tareas cognitivas se usa explícitamente para mitigar las diferencias entre sujetos y mejorar la comparabilidad [4D], y su definición formal (band/total) está estandarizada en la literatura [5D]. 
-  
+  Cuando se comparan condiciones (p. ej., ojos abiertos vs. cerrados; reposo vs. tarea), la potencia relativa —potencia de banda dividida por la potencia total (p. ej., 0.5–48 Hz)— reduce la variabilidad inter-sujeto debida a impedancias y ganancias y resalta cambios proporcionales entre estados. En tareas cognitivas se usa explícitamente para mitigar las diferencias entre sujetos y mejorar la comparabilidad [4D], y su definición formal (band/total) está estandarizada en la literatura [5D].
   Aplicada al paradigma clásico ojos abiertos vs. cerrados, la potencia α relativa disminuye con ojos abiertos y aumenta con ojos cerrados, efecto documentado en estudios recientes de reposo (EO/EC) y que justifica reportar α en forma relativa para comparaciones entre condiciones/sujetos [6D].
 </p>
 
 
 ### **5.1. Gráficas obtenidas**
-#### **5.1.1 Prueba 1 - Basal 1: EEG en reposo**
+### **5.1.1 Prueba 1 - Basal 1: EEG en reposo**
 ![Señal EEG](Gráficas/EEG_1.png)
 
-#### **5.1.2 Prueba 2 - Basal 2: EEG en reposo y vista punto fijo**
+### **5.1.2 Prueba 2 - Basal 2: EEG en reposo y vista punto fijo**
 ![Señal EEG](Gráficas/EEG_2.png)
 
-#### **5.1.3 Prueba 3 - Tarea cognitiva: EEG restar 7 desde 100**
+### **5.1.3 Prueba 3 - Tarea cognitiva: EEG restar 7 desde 100**
 ![Señal EEG](Gráficas/EEG_3.png)
 
-#### **5.1.4 Prueba 4 - Artefactos: EEG arterfacto cada 2 segundos**
+### **5.1.4 Prueba 4 - Artefactos: EEG arterfacto cada 2 segundos**
 ![Señal EEG](Gráficas/EEG_4.png)
 
-#### **5.1.5 Prueba 5 - Libre: EEG escuchar música suave a potente**
+### **5.1.5 Prueba 5 - Libre: EEG escuchar música suave a potente**
 ![Señal EEG](Gráficas/EEG_5.png)
 
 ### **5.2. Comparación potencia α en ojos abiertos vs. cerrados**
