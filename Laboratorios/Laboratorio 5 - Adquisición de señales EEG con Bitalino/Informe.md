@@ -23,7 +23,14 @@ Las oscilaciones en el potencial eléctrico del cerebro se categorizan en difere
 
 ## **4. Procedimiento**
 Para la medición de las señales EEG en el laboratorio se realizarán diferentes lecturas cuyos momentos a evaluar en el sujeto son los siguientes:
--
+- **Reposo** 
+- **Fijar vista en un punto específico**
+- **Ojos cerrados en reposo**
+- **Ejercicio cognitivo de resta**
+- **Acción de masticar cada 2 segundos**
+- **Actividad libre (escuchar música)**
+
+Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo mejor posible los estímulos externos como la luz de dia (usando un pedazo de papel o tela que disminuya la luz entrante en los párpados) y ruido externo, tanto del ambiente de laboratorio como de afuera de este (usando audífonos con jebe que puedan suprimir el ruido).
 
 ### **4.1 Conexión de electrodos**
 
