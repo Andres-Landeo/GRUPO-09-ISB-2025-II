@@ -52,8 +52,8 @@ Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo m
     </thead>
     <tbody>
       <tr>
-        <td rowspan=2  align="center">En este ejercicio se procuró que el sujeto de pruebas esté los más quieto posible, con una respiración calmada y aislando de los estimulos externos (luz y ruidos)</td>
-        <td align="center">Consistió en medir la respuesta del cerebro por medio de una actividad ligera, mirar un punto en específico. En esta prueba se aisló el sonido del ambiente para mayor concentración del usuario</td>
+        <td rowspan=2  align="center">En este ejercicio se procuró que el sujeto de pruebas esté los más quieto posible, con una respiración calmada y aislando de los estimulos externos (luz y ruidos), todo durante 1 minuto</td>
+        <td align="center">Consistió en medir la respuesta del cerebro por medio de una actividad ligera, mirar un punto en específico. En esta prueba se aisló el sonido del ambiente para mayor concentración del usuario. El ejercicio tuvo duración de 1 minuto</td>
         <td align="center">El ejercicio trató de otra actividad cognitiva pero con un nivel un poco mayor, calcular restas sucesivas mentalmente, en este caso fue partir de 100 e ir restando de 7 en 7. Aquí también se mitigaron los estimulos externos</td>
       </tr>
       <tr>
@@ -72,8 +72,8 @@ Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo m
     </thead>
     <tbody>
       <tr>
-        <td align="center">Actividad física</td>
-        <td align="center">Descanso</td>
+        <td align="center">Para esta sección se dieron a escoger entre dos movimientos: Parpadear o masticar; cada uno con un lapso de dos segundos. El tiempo total de la ejecución fue de 1 minuto</td>
+        <td align="center">En esta ultima actividad, se enfocó en que el sujeto tuviera que escuchar música para medir como afecta el estimulo audivito al cerebro. Se realizó una variación en cuanto a la selección del género de la música; primero se reprodujo un pista que transmitía calma/relajación durante 15 segundos, luego por otros 30 segundos se cambio a una melodía de rock/metal para evaluar como percibe el sujeto esta transición</td>
       </tr>
     </tbody>
 </table>
