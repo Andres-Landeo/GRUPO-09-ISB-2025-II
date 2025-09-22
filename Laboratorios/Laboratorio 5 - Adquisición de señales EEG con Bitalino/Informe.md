@@ -52,9 +52,9 @@ Para un mejor desarrollo y recogo de las señales EEG, se trató en mitigar lo m
     </thead>
     <tbody>
       <tr>
-        <td rowspan=2  align="center">Reposo</td>
-        <td align="center">Contención de aire</td>
-        <td align="center">Descanso post contención de aire</td>
+        <td rowspan=2  align="center">En este ejercicio se procuró que el sujeto de pruebas esté los más quieto posible, con una respiración calmada y aislando de los estimulos externos (luz y ruidos)</td>
+        <td align="center">Consistió en medir la respuesta del cerebro por medio de una actividad ligera, mirar un punto en específico. En esta prueba se aisló el sonido del ambiente para mayor concentración del usuario</td>
+        <td align="center">El ejercicio trató de otra actividad cognitiva pero con un nivel un poco mayor, calcular restas sucesivas mentalmente, en este caso fue partir de 100 e ir restando de 7 en 7. Aquí también se mitigaron los estimulos externos</td>
       </tr>
       <tr>
         <td align="center"><img src="Imágenes/MiradaFija.png" width='150' height='100' ></td>
