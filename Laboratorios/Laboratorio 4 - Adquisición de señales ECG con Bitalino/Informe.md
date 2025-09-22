@@ -139,3 +139,6 @@ En conclusión, los resultados coinciden tanto con los resultados esperados como
 - [5] *Simoons ML, Hugenholtz PG. Gradual changes of ECG waveform during and after exercise in normal subjects. Circulation. 1975;52(4):570-7.*
 - [6] *Kaiser W, Findeis M. Novel signal processing methods for exercise ECG. Comput Cardiol. 2000;27:71-8.*
 - [7] *Fauzi MF, Mustaffa F, Danis A, Rosly MM, Ramli FR, Rahim HA, et al. Muscle fatigue detection using ECG and EMG signals during exercise. IAES Int J Artif Intell. 2022;11(1):240-8.*
+- [8] *S. Makeig et al., “Dynamic brain sources of visual evoked responses,” Science, 2002. — Incluye un preprocesado con filtros pasa-banda para mejorar la relación señal-ruido en EEG.*
+- [9] *M. Al-Qazzaz et al., “EEG-based emotion recognition using reduced nonlinear features,” Sensors, vol. 19, no. 987, 2019. — Emplea filtro band-pass 0.5–50 Hz y notch a 50 Hz para eliminar ruido eléctrico.*
+- [10] *A. Widmann, E. Schröger, and B. Maess, “Digital filter design for electrophysiological data – a practical approach,” J. Neurosci. Methods, vol. 250, pp. 34–46, 2015. — Revisión fundamental sobre diseño de filtros digitales en EEG, discute FIR vs IIR, efectos de corte y artefactos, proponiendo mejores prácticas.*
