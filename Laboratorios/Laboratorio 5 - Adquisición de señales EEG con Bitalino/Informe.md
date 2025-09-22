@@ -134,16 +134,18 @@ En el gráfico se logra distinguir las principales bandas EEG bajo la condición
 
 ## Gráficas de potencia α en ojos abiertos vs. cerrados
 
-## **6 Preguntas adicionales**
+## **6. Preguntas adicionales**
 ### ¿Qué banda de frecuencia predomina al cerrar los ojos?
+Si bien no es tan fácil de distinguir debido al ruido y alteraciones, las ondas alfa son las que aumentan al cerrar los ojos(si bien en total las ondas beta suman una mayor potencia), asociadas a un estado de lucidez con relajación causada por la disminución de los estímulos externos.
 
 ### ¿Qué filtro es imprescindible para EEG y por qué?
-El filtro que es casi imprescindible para el EEG
+Se tiene que utilizar un filtro pasa banda que permita incluir desde 0.5 Hz hasta alrededor de 40 o 50 Hz, y si se desea detectar las ondas de mayor frecuencia, es útil usar filtros Notch para eliminar los ruidos por dispositivos y de red que se presentan en estas frecuencias más altas. Como el filtrado constituye un paso imprescindible en el procesamiento de EEG, dado que las señales son muy débiles y fácilmente contaminadas por ruido fisiológico (parpadeos, EMG), ambiental y eléctrico. El uso de filtros FIR de fase lineal es recomendado por su estabilidad y por evitar la distorsión de fase, mientras que la aplicación de un filtro pasabanda resulta esencial para eliminar tanto interferencias de baja frecuencia (derivas, respiración, sudoración, masticación) como de alta frecuencia (artefactos musculares, ruido eléctrico o mecánico). Además, estudios recientes han demostrado que los filtros band-stop con ventana Bartlett ofrecen un rendimiento óptimo en bandas específicas como alfa, delta y gamma, gracias a su baja latencia y alta selectividad, permitiendo conservar la integridad de la señal cerebral y mejorar la extracción de características para el análisis posterior.
 
 ### ¿Puedes modular conscientemente tu señal EEG? Da un ejemplo.
+Sí es posible modular la señal de EEG, por ejemplo mediante la meditación, en la que aumenta significativamente la prevalencia de las ondas alfa.
 
 ### ¿Se observan diferencias entre Fp1 y Fp2? ¿Por qué podrían ocurrir?
-
+Sí se observarían diferencias entre fp1 y fp2, que probablemente ocurren debido al diferente nivel de actividad en cada uno de los lóbulos y su cercanía distinta a cada electrodo.
 
 ## **7. Referencias**
 [1D] P. Kaushik et al., “Decoding the cognitive states of attention and distraction in a sustained-attention task using EEG,” Sci. Rep., 2022 — usa band-pass 0.5–45 Hz en el preprocesado. 
