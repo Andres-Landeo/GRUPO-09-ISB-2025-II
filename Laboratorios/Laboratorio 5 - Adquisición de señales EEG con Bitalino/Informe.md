@@ -132,6 +132,8 @@ En las gráficas se pueden apreciar la presencia de artefactos recurrentes cada 
 ## Prueba 5 - Graficas de escuchar música
 En el gráfico se logra distinguir las principales bandas EEG bajo la condición de escucha de música libre. Durante los primeros segundos sin estímulo musical, la actividad se mantiene similar al reposo, con baja potencia en Delta y Theta y una banda Alpha discreta, sin un pico marcado. Tras la introducción del ruido azul, se observa una atenuación adicional de la actividad Alpha y un ligero incremento en la banda Beta, lo cual puede asociarse a un estado de activación sensorial sostenida. Finalmente, con la exposición al tema BYOB (System of a Down), caracterizado por alta intensidad rítmica y variabilidad sonora, se aprecia un aumento más evidente en la potencia Beta y un refuerzo notable en la banda Gamma alrededor de 40 Hz, reflejando una mayor exigencia de procesamiento auditivo y atencional. Las gráficas muestran cómo la transición de un estado basal a uno con estimulación auditiva intensa modula el EEG: la supresión de Alpha junto con el aumento en Beta y Gamma son consistentes con procesos de arousal cortical, atención y procesamiento multimodal, característicos de la respuesta cerebral a música de alta energía y complejidad rítmica.
 
+## Gráficas de potencia α en ojos abiertos vs. cerrados
+
 ## **6 Preguntas adicionales**
 ### ¿Qué banda de frecuencia predomina al cerrar los ojos?
 
@@ -155,3 +157,9 @@ El filtro que es casi imprescindible para el EEG
 [5D] Y. Wang et al., “Relative Power of Specific EEG Bands and Their Ratios in Attention-Deficit/Hyperactivity Disorder,” Front. Hum. Neurosci., 2016 — definición y cálculo de potencia relativa (band/total).
 
 [6D] N. M. Petro et al., “Eyes-closed versus eyes-open differences in spontaneous human brain activity,” NeuroImage, 2022 — α relativa menor en ojos abiertos que en cerrados. 
+
+[7D] *S. Makeig et al., “Dynamic brain sources of visual evoked responses,” Science, 2002. — Incluye un preprocesado con filtros pasa-banda para mejorar la relación señal-ruido en EEG.*
+
+[8D] *M. Al-Qazzaz et al., “EEG-based emotion recognition using reduced nonlinear features,” Sensors, vol. 19, no. 987, 2019. — Emplea filtro band-pass 0.5–50 Hz y notch a 50 Hz para eliminar ruido eléctrico.*
+
+[9D] *A. Widmann, E. Schröger, and B. Maess, “Digital filter design for electrophysiological data – a practical approach,” J. Neurosci. Methods, vol. 250, pp. 34–46, 2015. — Revisión fundamental sobre diseño de filtros digitales en EEG, discute FIR vs IIR, efectos de corte y artefactos, proponiendo mejores prácticas.*
