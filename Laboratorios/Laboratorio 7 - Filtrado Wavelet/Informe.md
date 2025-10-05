@@ -27,6 +27,7 @@
 
 
 <p align="justify">
+
   - Implementar el filtrado DWT con la wavelet db4 en señales ECG.
   
   - Definir los parámetros de descomposición y umbralización más adecuados según el contenido espectral de cada señal.
