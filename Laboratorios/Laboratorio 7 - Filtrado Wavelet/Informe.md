@@ -107,25 +107,25 @@ El nivel 4 logra un balance adecuado entre supresión de ruido y preservación d
 
 ## **4.1.1 Filtrado - coeficientes y aproximación**
 
-## **ECG Post ejercicio - coeficientes y aproximación**
+### **ECG Post ejercicio - coeficientes y aproximación**
 
 <p align="center">
   <img src="Resultados/ECG_1_coeficientes.png">
 </p>
 
-## **ECG Reposo - coeficientes y aproximación**
+### **ECG Reposo - coeficientes y aproximación**
 <p align="center">
   <img src="Resultados/ECG_2_coeficientes.png">
 </p>
 
 ## **4.1.2 Reconstrucción de las señales ECG**
 
-## **ECG Post ejercicio - recontrucción**
+### **ECG Post ejercicio - recontrucción**
 <p align="center">
   <img src="Resultados/ECG_1_reconstruida.png">
 </p>
 
-## **ECG Reposo - recontrucción**
+### **ECG Reposo - recontrucción**
 <p align="center">
   <img src="Resultados/ECG_2_reconstruida.png">
 </p>
