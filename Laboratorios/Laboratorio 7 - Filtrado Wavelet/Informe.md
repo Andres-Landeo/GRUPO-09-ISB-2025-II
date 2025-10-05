@@ -4,7 +4,7 @@
 
 El electrocardiograma (ECG) es una señal biopotencial que refleja la actividad eléctrica del corazón. Debido a su baja amplitud (del orden de milivoltios), está sujeta a interferencias externas como ruido muscular, deriva de la línea base y acoplamiento de la red eléctrica (60 Hz). Estos factores pueden distorsionar las ondas P, QRS y T, complicando su interpretación clínica.
 
-Para mitigar dichos efectos, se requiere un método de filtrado que elimine el ruido sin alterar la morfología cardíaca. En los últimos años, la Transformada Wavelet Discreta (DWT) se ha consolidado como una herramienta eficaz para este propósito, gracias a su capacidad de analizar señales no estacionarias en diferentes niveles de resolución. Esto permite separar las componentes de baja frecuencia (información fisiológica) de las de alta frecuencia (ruido) de forma adaptativa [1], [2].
+Para mitigar dichos efectos, se requiere un método de filtrado que elimine el ruido sin alterar la morfología cardíaca. En los últimos años, la Transformada Wavelet Discreta (DWT) se ha consolidado como una herramienta eficaz para este propósito, gracias a su capacidad de analizar señales no estacionarias en diferentes niveles de resolución. Esto permite separar las componentes de baja frecuencia (información fisiológica) de las de alta frecuencia (ruido) de forma adaptativa [1] [2].
 
 En este estudio se emplea la wavelet Daubechies 4 (db4) para el filtrado y reconstrucción de señales ECG** registradas con el BITalino (Fs = 1000 Hz). La selección de esta familia se fundamenta en su similitud morfológica con el complejo QRS y su capacidad comprobada para preservar la forma de onda cardíaca mientras atenúa ruido, según estudios recientes [1]–[5].
 
@@ -23,13 +23,13 @@ Aplicar la Transformada Wavelet Discreta (DWT) para el filtrado de señales biom
 
 ## **3. Procedimiento: Diseño del filtro**
 
-### **3.1 Filtrado wavelet ECG**
+### **3.1 Filtrado Wavelet ECG**
 
 ### **3.1.1 Selección de la familia wavelet**
 
 Se seleccionó la Daubechies 4 (db4) como wavelet madre por ser una de las más utilizadas en el procesamiento de señales ECG. Su forma asimétrica y su soporte compacto permiten una excelente localización temporal, lo cual es esencial para capturar los picos del complejo QRS sin distorsionar las ondas P y T.  
 
-Varios estudios respaldan esta elección:
+Artículos que respaldan la elección:
 - Abdou et al. (2024) [1] compararon distintas familias de wavelet para ECG de un solo canal y concluyeron que db4 ofrece una mejor preservación morfológica frente a db6.  
 - Chandra et al. (2021) [2] implementaron un filtro adaptativo de alta velocidad basado en wavelets y comprobaron que db4 proporciona una mayor estabilidad temporal en el denoising de señales biomédicas.  
 - Akkaya et al. (2025) [3] destacaron que la db4 sigue siendo una de las *wavelets* más efectivas para señales no estacionarias por su equilibrio entre suavizado y resolución temporal.  
@@ -38,7 +38,6 @@ Varios estudios respaldan esta elección:
 
 En conjunto, estas referencias confirman que db4 es una opción óptima para el análisis y filtrado de señales cardíacas, tanto en condiciones de reposo como post-ejercicio.
 
----
 
 ### **3.1.2 Parámetros definidos**
 
@@ -53,7 +52,7 @@ En conjunto, estas referencias confirman que db4 es una opción óptima para el 
 
 #### **Justificación del número de niveles**
 
-Con una frecuencia de muestreo de **1000 Hz**, una descomposición en cuatro niveles permite aislar las bandas relevantes:
+Con una frecuencia de muestreo de 1000 Hz, una descomposición en cuatro niveles permite aislar las bandas relevantes:
 - **D1–D2:** componentes de alta frecuencia (ruido, interferencia de línea).  
 - **D3–D4:** información principal del complejo QRS.  
 - **A4:** bajas frecuencias (ondas P, T y línea base).  
@@ -62,6 +61,24 @@ El nivel 4 logra un balance adecuado entre supresión de ruido y preservación d
 
 
 ## **4. Resultados** 
+
+### **4.1 Resultados - filtrado de ECG**
+
+### **4.1.1 Filtrado - coeficientes y aproximación**
+
+### **ECG Post ejercicio - coeficientes y aproximación**
+<img src="Resultados/ECG_1_coeficientes.png" width="480">
+
+### **ECG Reposo - coeficientes y aproximación**
+<img src="Resultados/ECG_2_coeficientes.png" width="480">
+
+### **4.1.2 Reconstrucción de las señales ECG**
+
+### **ECG Post ejercicio - recontrucción**
+<img src="Resultados/ECG_1_reconstruida.png" width="480">
+
+### **ECG Reposo - recontrucción**
+<img src="Resultados/ECG_2_reconstruida.png" width="480">
 
 ## **5. Discusión** 
 
