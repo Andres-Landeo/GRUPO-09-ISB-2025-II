@@ -2,8 +2,6 @@
 
 # **1. Introducción**
 
-# **1. Introducción**
-
 <p align="justify">
   El electrocardiograma (ECG) es una señal biopotencial que refleja la actividad eléctrica del corazón. Debido a su baja amplitud (del orden de milivoltios), está sujeta a interferencias externas como ruido muscular, deriva de la línea base y acoplamiento de la red eléctrica (60 Hz). Estos factores pueden distorsionar las ondas P, QRS y T, complicando su interpretación clínica.
 </p>
@@ -132,6 +130,8 @@ El nivel 4 logra un balance adecuado entre supresión de ruido y preservación d
 </p>
 
 # **5. Discusión** 
+
+## **5.1 Filtrado Wavelet ECG**
 
 # **6. Referencias**
 
