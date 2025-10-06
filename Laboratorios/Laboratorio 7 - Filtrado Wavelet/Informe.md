@@ -24,9 +24,9 @@
 
 <p align="justify">
 
-  - Implementar el filtrado DWT con la wavelet elegida para cada tipo de señal biomédica.
-  
   - Definir los parámetros de descomposición y umbralización más adecuados según el contenido espectral de cada señal.
+  
+  - Implementar el filtrado DWT con la wavelet elegida para cada tipo de señal biomédica.
   
   - Evaluar la efectividad del filtrado mediante la comparación entre la señal original y la reconstruida.
   
