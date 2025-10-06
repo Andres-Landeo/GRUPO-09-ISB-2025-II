@@ -7,11 +7,7 @@
 </p>
 
 <p align="justify">
-  Para mitigar dichos efectos, se requiere un método de filtrado que elimine el ruido sin alterar la morfología cardíaca. En los últimos años, la Transformada Wavelet Discreta (DWT) se ha consolidado como una herramienta eficaz para este propósito, gracias a su capacidad de analizar señales no estacionarias en diferentes niveles de resolución. Esto permite separar las componentes de baja frecuencia (información fisiológica) de las de alta frecuencia (ruido) de forma adaptativa [1] [2].
-</p>
-
-<p align="justify">
-  En este estudio se emplea la wavelet Daubechies 4 (db4) para el filtrado y reconstrucción de señales ECG registradas con el BITalino (Fs = 1000 Hz). La selección de esta familia se fundamenta en su similitud morfológica con el complejo QRS y su capacidad comprobada para preservar la forma de onda cardíaca mientras atenúa ruido, según estudios recientes [1]–[5].
+  Para mitigar dichos efectos, se requiere un método de filtrado que elimine el ruido sin alterar la morfología cardíaca. En los últimos años, la Transformada Wavelet Discreta (DWT) se ha consolidado como una herramienta eficaz para este propósito, gracias a su capacidad de analizar señales no estacionarias en diferentes niveles de resolución. Esto permite separar las componentes de baja frecuencia (información fisiológica) de las de alta frecuencia (ruido) de forma eficaz [1] [2].
 </p>
 
 
@@ -28,7 +24,7 @@
 
 <p align="justify">
 
-  - Implementar el filtrado DWT con la wavelet db4 en señales ECG.
+  - Implementar el filtrado DWT con la wavelet elegida para cada tipo de señal biomédica.
   
   - Definir los parámetros de descomposición y umbralización más adecuados según el contenido espectral de cada señal.
   
@@ -72,10 +68,6 @@
   - Xie et al. (2025) [5] propusieron un algoritmo de umbral adaptativo basado en análisis wavelet, validando que db4 permite una reducción de ruido más efectiva que métodos convencionales de filtrado.  
 </p>
 
-<p align="justify">
-  En conjunto, estas referencias confirman que db4 es una opción óptima para el análisis y filtrado de señales cardíacas, tanto en condiciones de reposo como post-ejercicio.
-</p>
-
 
 ## **3.1.2 Parámetros definidos**
 
@@ -83,7 +75,7 @@
 |------------|--------|---------------|
 | **Familia wavelet** | Daubechies 4 (db4) | Forma similar al QRS y excelente localización temporal |
 | **Tipo de transformada** | Discrete Wavelet Transform (DWT) | Ideal para señales no estacionarias como el ECG |
-| **Nivel de descomposición** | 4 niveles | Cubre la banda fisiológica del ECG (0.5–40 Hz) |
+| **Nivel de descomposición** | 4 niveles | Equilibrio adecuado entre la supresión de interferencias y la preservación de la morfología cardíaca |
 | **Tipo de umbral** | Soft | Evita discontinuidades en la reconstrucción |
 | **Valor de umbral** | 0.1 (experimental) | Ajuste que equilibra suavizado y preservación de picos |
 | **Reconstrucción** | `pywt.waverec()` | Combina coeficientes umbralizados para recuperar la señal filtrada |
@@ -94,12 +86,13 @@
   Con una frecuencia de muestreo de 1000 Hz, una descomposición en cuatro niveles permite aislar las bandas relevantes:
 </p>
 
-- **D1–D2:** componentes de alta frecuencia (ruido, interferencia de línea).
-- **D3–D4:** información principal del complejo QRS.  
-- **A4:** bajas frecuencias (ondas P, T y línea base).  
- 
-El nivel 4 logra un balance adecuado entre supresión de ruido y preservación de los componentes fisiológicos del ECG [4].
+- **D1–D2:** componentes de alta frecuencia, donde predominan el ruido de línea eléctrica y los artefactos musculares.  
+- **D3–D4:** energía principal del complejo QRS, que contiene la información morfológica más relevante del ECG.  
+- **A4:** componentes de baja frecuencia, que incluyen las ondas P, T y la deriva de línea base.   
 
+<p align="justify">
+  Esta configuración de cuatro niveles ofrece un equilibrio adecuado entre la supresión de interferencias y la preservación de la morfología cardíaca. La descomposición en cuatro niveles mediante la wavelet db4 permite eliminar eficazmente la interferencia de red eléctrica y el ruido de alta frecuencia sin alterar la forma del complejo QRS, mostrando una mejora significativa en la correlación y en la relación señal-ruido respecto a filtros convencionales [6].
+</p>
 
 # **4. Resultados** 
 
@@ -130,9 +123,26 @@ El nivel 4 logra un balance adecuado entre supresión de ruido y preservación d
   <img src="Resultados/ECG_2_reconstruida.png">
 </p>
 
-# **5. Discusión** 
+## **5. Discusión**
 
-## **5.1 Filtrado Wavelet ECG**
+### **5.1 Filtrado Wavelet ECG**
+
+<p align="justify">
+  En los resultados de la DWT aplicada a las señales ECG post-ejercicio y reposo, se observa una buena separación de los componentes frecuenciales al descomponerlos en cuatro niveles con la wavelet db4. En ambos casos, los coeficientes de detalle D1 y D2 capturan principalmente el ruido de alta frecuencia y artefactos, mientras que los niveles D3 y D4 concentran la energía característica del complejo QRS. La componente de aproximación (A4) conserva las bajas frecuencias asociadas a las ondas P, T y la línea base.
+</p>
+
+<p align="justify">
+  En la señal ECG post-ejercicio, hay una mayor variación entre amplitud y frecuencia, lo que va de acuerdo al incremento del ritmo cardíaco. A pesar de esto, la señal reconstruida mantiene una forma casi idéntica a la original, conservando la forma del complejo QRS y las ondas P y T, lo cual significa que se tiene un buen filtrado. Además, al superponer la señal original y la reconstruida se ve una alineación , con lo cual se evidencia que el filtrado eliminó de forma eficaz el ruido sin distorsionar la señal útil.
+</p>
+
+<p align="justify">
+  En la señal ECG reposo, el resultado muestra una línea de base más estable y una forma más definida entre picos (intervalos RR), con lo cual se confirma la eficiencia del filtrado para reducir artefactos y atenuar fluctuaciones residuales. La señal reconstruida también mantiene las proporciones temporales entre las ondas y la amplitud característica del complejo QRS, lo que indica que se mantiene la información fisiológica importante.
+</p>
+
+<p align="justify">
+  En general, los resultados confirman que la descomposición en cuatro niveles con la wavelet Daubechies 4 (db4) brinda un equilibrio óptimo entre la supresión de ruido y la conservación de la morfológica del ECG, tanto en condiciones de reposo como post-ejercicio. Esto demuestra que este método de filtrado da una alta relación señal-ruido (SNR) y preserva la integridad del complejo QRS, reforzando lo descrito en la literatura.
+</p>
+
 
 # **6. Referencias**
 
@@ -145,3 +155,5 @@ El nivel 4 logra un balance adecuado entre supresión de ruido y preservación d
 [4] S. D. Yusuf, F. C. Maduakolam, I. Umar, and A. Z. Loko, “Analysis of Butterworth filter for electrocardiogram de-noising using Daubechies wavelets,” *SSRG International Journal of Electronics and Communication Engineering*, vol. 7, no. 4, pp. 8–13, 2020.  
 
 [5] H. Xie, J. Jiang, Z. Zhao, and J. Peng, “Thresholding noise reduction algorithm for ECG signals based on wavelet analysis,” in *Proc. 2025 5th Int. Conf. Autom. Control, Algorithm and Intell. Bionics*, pp. 507–513, 2025. doi:10.1145/3760269.3760349.
+
+[6] M. J. Rodenas-Herraiz, A. Garcia-Rodriguez, and A. Alcaraz, “An Efficient Algorithm Based on Wavelet Transform to Reduce Powerline Noise From Electrocardiograms,” arXiv preprint, 2024. doi:10.48550/arXiv.2401.10694.
