@@ -94,6 +94,47 @@
   Esta configuración de cuatro niveles ofrece un equilibrio adecuado entre la supresión de interferencias y la preservación de la morfología cardíaca. La descomposición en cuatro niveles mediante la wavelet db4 permite eliminar eficazmente la interferencia de red eléctrica y el ruido de alta frecuencia sin alterar la forma del complejo QRS, mostrando una mejora significativa en la correlación y en la relación señal-ruido respecto a filtros convencionales [6].
 </p>
 
+## **3.2 Filtrado Wavelet EEG**
+
+## **3.2.1 Selección de la familia wavelet**
+
+<p align="justify">
+Se utiliza Daubechies 6 porque combina buena resolución temporal y frecuencial, estabilidad numérica, semejanza con la forma de las ondas EEG y una longitud de filtro adecuada para captar los diferentes ritmos cerebrales sin distorsionar la señal.
+</p>
+
+## **3.2.2 Parámetros definidos**
+
+| Parámetro | Valor | Justificación |
+|------------|--------|---------------|
+| **Familia wavelet** | Daubechies 6 (db6) | Presenta una forma de onda similar a los patrones EEG (oscilaciones suaves y transitorias), con buena localización temporal y frecuencial. Ofrece equilibrio entre resolución y suavidad, ideal para aislar ritmos cerebrales (δ, θ, α, β, γ). |
+| **Tipo de transformada** | Discrete Wavelet Transform (DWT) | Permite analizar la señal EEG, que es no estacionaria, con resolución variable en tiempo y frecuencia, captando transitorios de actividad neuronal. |
+| **Nivel de descomposición** | 5 niveles | Permite separar bandas de frecuencia asociadas a los ritmos cerebrales: A5 (δ), D5 (θ), D4 (α), D3 (β), D2–D1 (γ), manteniendo la coherencia espectral de la señal. |
+| **Tipo de umbral** | Soft | Suaviza los coeficientes pequeños eliminando ruido sin introducir discontinuidades, preservando la forma de las oscilaciones EEG. |
+| **Valor de umbral** | 0.1 (experimental) | Ajuste empírico que logra atenuar artefactos de bajo nivel (como parpadeos o ruido muscular) sin afectar la potencia relativa de las bandas EEG. |
+| **Reconstrucción** | `pywt.waverec()` | Reconstruye la señal EEG a partir de los coeficientes umbralizados, conservando la morfología original y reduciendo componentes espurios.|
+
+### **Justificación del número de niveles**
+
+<p align="justify">
+  Con una frecuencia de muestreo de 256 Hz, una descomposición en cinco niveles permite aislar las bandas de frecuencia más relevantes del EEG, asociadas a distintos estados cognitivos y de actividad cerebral:
+
+  - **D1–D2**: componentes de alta frecuencia (32–128 Hz), donde predominan el ruido eléctrico, artefactos musculares (EMG) y actividad gamma residual.
+
+  - **D3**: rango beta (16–32 Hz), relacionado con la actividad mental y concentración, presente durante tareas cognitivas como la resta mental.
+
+  - **D4**: rango alfa (8–16 Hz), vinculado con estados de relajación o cierre ocular.
+
+  - **D5**: rango theta (4–8 Hz), asociado con procesos de memoria y atención sostenida.
+
+  - **A5**: rango delta (0–4 Hz), correspondiente a actividades de baja frecuencia y potenciales lentos corticales.
+</p>
+
+<p align="justify">
+  Esta configuración de cinco niveles ofrece un equilibrio entre la separación efectiva de bandas cerebrales y la preservación de la morfología temporal de la señal EEG.
+  La descomposición mediante la wavelet Daubechies 6 (db6) permite aislar las oscilaciones características de cada ritmo cerebral, reduciendo artefactos de alta frecuencia sin perder información significativa en los dominios alfa y beta.
+  Este enfoque mejora la resolución tiempo-frecuencia y la interpretación neurofisiológica frente a filtros convencionales.
+</p>
+
 # **4. Resultados** 
 
 ## **4.1 Resultados - filtrado de ECG**
@@ -123,6 +164,21 @@
   <img src="Resultados/ECG_2_reconstruida.png">
 </p>
 
+## **4.2 Resultados - filtrado de EEG**
+
+## **4.2.1 Filtrado - coeficientes y aproximación**
+
+### **EEG Resta mental - coeficientes y aproximación**
+<p align="center">
+  <img src="Resultados/EEG_coeficientes.png">
+</p>
+
+### **EEG Resta mental- recontrucción**
+<p align="center">
+  <img src="Resultados/EEG_reconstruida.png">
+</p>
+
+
 ## **5. Discusión**
 
 ### **5.1 Filtrado Wavelet ECG**
@@ -143,6 +199,24 @@
   En general, los resultados confirman que la descomposición en cuatro niveles con la wavelet Daubechies 4 (db4) brinda un equilibrio óptimo entre la supresión de ruido y la conservación de la morfológica del ECG, tanto en condiciones de reposo como post-ejercicio. Esto demuestra que este método de filtrado da una alta relación señal-ruido (SNR) y preserva la integridad del complejo QRS, reforzando lo descrito en la literatura.
 </p>
 
+### **5.2 Filtrado Wavelet EEG**
+
+<p align="justify">
+La aplicación de la DWT con Daubechies 6 (db6) permitió separar eficazmente las bandas de frecuencia características del EEG en cinco niveles.
+Los coeficientes D1–D2 corresponden al ruido y artefactos musculares, mientras que D3, D4 y D5 reflejan las bandas beta, alfa y theta, asociadas a procesos cognitivos.
+</p>
+
+<p align="justify">
+Durante la tarea de resta mental, se observa un aumento en la energía de la banda beta (D3), vinculada a la actividad cortical y concentración, junto con una ligera disminución de las bandas alfa y theta, indicativa de mayor carga mental.
+</p>
+
+<p align="justify">
+La señal reconstruida mantiene la morfología temporal original, evidenciando un filtrado adecuado sin pérdida de información relevante.
+</p>
+
+<p align="justify">
+En conjunto, los resultados muestran que la wavelet db6 ofrece un equilibrio entre eliminación de ruido y preservación de ritmos cerebrales, permitiendo analizar con claridad la actividad neuronal durante procesos cognitivos.
+</p>
 
 # **6. Referencias**
 
