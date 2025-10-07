@@ -178,6 +178,32 @@ Se utiliza Daubechies 6 porque combina buena resolución temporal y frecuencial,
   <img src="Resultados/EEG_reconstruida.png">
 </p>
 
+## **4.3 Resultados - filtrado de EMG**
+
+## **4.3.1 Filtrado - coeficientes y aproximación**
+
+### **EMG Elevación trapecio - coeficientes y aproximación**
+
+<p align="center">
+  <img src="Resultados/EMG1_coeficientes.png">
+</p>
+
+### **EMG Reposo - coeficientes y aproximación**
+<p align="center">
+  <img src="Resultados/EMG_reposo_coeficientes.png">
+</p>
+
+## **4.3.2 Reconstrucción de las señales EMG**
+
+### **EMG Post ejercicio - recontrucción**
+<p align="center">
+  <img src="Resultados/EMG1_reconstruida.png">
+</p>
+
+### **EMG Reposo - recontrucción**
+<p align="center">
+  <img src="Resultados/EMG_reposo_reconstruida.png">
+</p>
 
 ## **5. Discusión**
 
@@ -218,6 +244,22 @@ La señal reconstruida mantiene la morfología temporal original, evidenciando u
 En conjunto, los resultados muestran que la wavelet db6 ofrece un equilibrio entre eliminación de ruido y preservación de ritmos cerebrales, permitiendo analizar con claridad la actividad neuronal durante procesos cognitivos.
 </p>
 
+### **5.3 Filtrado Wavelet EMG**
+
+<p align="justify">
+  En las EMG del trapecio (reposo y elevación) la descomposición DWT con db5 en 5 niveles separa la señal de forma coherente con la fisiología y con el contenido espectral típico de sEMG. Con Fs≈1 kHz, los detalles D1–D2 recogen sobre todo ruido fino y artefactos de alta frecuencia. Por otro lado, los D3–D4 concentran la actividad mioeléctrica útil donde aparecen los “bursts” del trapecio. Finalmente la aproximación A5 retiene muy baja frecuencia (deriva de electrodos/movimiento). En tus figuras esto se ve claro: D1–D2 tienen amplitud baja salvo en los bordes.
+
+<p align="justify">
+  En la señal EMG de elevación del trapecio, se aprecia que en D3–D5 hay paquetes de energía alineados con los picos de la señal original; la reconstruida resalta esos bursts y reduce el “grano” entre ellos. Por otro lado, La amplitud relativa y el timing de los bursts se preservan en vez de correrse o ensancharse, lo que sugiere un umbralado suave y una adecuada selección de wavelet, ya que db4 / sym4 son casi simétricos. Finalmente, el fondo entre los burst baja a casi 0, mejorando el SNR sin aplanar los picos. Si hubo red de 50/60 Hz, parte cae en D4; aplicar umbral algo mayor solo en D4 o combinar con tu notch IIR ayuda a dejar mínima interferencia residual [7].
+</p>
+
+<p align="justify">
+  En la señal EMG en reposo, vemos que la señal reconstruida queda casi nula entre 1–9 s con pequeños restos solo en cambios bruscos: eso indica que el umbralado limpió el ruido de alta frecuencia (D1–D2) y artefactos ligeros en D3–D4 sin detectar falsa actividad muscular. El aumento final que se aprecia es debido al origen de la señal, puesto que en ese preciso instante se empezó a realizar el movimiento de flexión. Fue algo inherente a la señal y es una limitante con la cual se trabajo durante todo el laboratorio, la nula estándarización de señales. La señal de reposo obtuvo un alto CNR y una base limpia para comparar con la contracción [8].
+</p>
+
+<p align="justify">
+  En conclusión, el análisis de la señal EMG del trapecio mediante la transformada wavelet (DWT con db5) demostró ser una herramienta altamente efectiva. Logró separar los componentes de la señal de manera coherente con la fisiología muscular: aisló el ruido en los niveles D1-D2, capturó la actividad muscular útil en los niveles D3-D4, y la deriva de baja frecuencia en A5. La reconstrucción de la señal mejoró significativamente la relación señal-ruido, preservando con precisión la amplitud y el timing de los "bursts" de contracción mientras suprimía casi por completo el ruido de fondo. Esto permitió una clara distinción entre los periodos de reposo y actividad, validando la elección de la wavelet y la estrategia de umbralizado para el procesamiento de señales EMG.
+
 # **6. Referencias**
 
 [1] A. Abdou et al., “Enhancement of single-lead dry-electrode ECG through wavelet,” *Frontiers in Signal Processing*, vol. 3, 2024. doi:10.3389/frsip.2024.1396077.
@@ -231,3 +273,7 @@ En conjunto, los resultados muestran que la wavelet db6 ofrece un equilibrio ent
 [5] H. Xie, J. Jiang, Z. Zhao, and J. Peng, “Thresholding noise reduction algorithm for ECG signals based on wavelet analysis,” in *Proc. 2025 5th Int. Conf. Autom. Control, Algorithm and Intell. Bionics*, pp. 507–513, 2025. doi:10.1145/3760269.3760349.
 
 [6] M. J. Rodenas-Herraiz, A. Garcia-Rodriguez, and A. Alcaraz, “An Efficient Algorithm Based on Wavelet Transform to Reduce Powerline Noise From Electrocardiograms,” arXiv preprint, 2024. doi:10.48550/arXiv.2401.10694.
+
+[7] C. Ouyang, L. Cai, B. Liu, *et al*., “An improved wavelet threshold denoising approach for surface electromyography signal,” *EURASIP Journal on Advances in Signal Processing*, vol. 2023, no. 1, **Art. no. 108**, 2023, doi: 10.1186/s13634-023-01066-3.
+
+[8] M. Boyer, L. Bouyer, J. S. Roy, and A. Campeau-Lecours, “Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review,” Sensors, vol. 23, no. 6, Art. no. 2927, 2023, doi: 10.3390/s23062927
