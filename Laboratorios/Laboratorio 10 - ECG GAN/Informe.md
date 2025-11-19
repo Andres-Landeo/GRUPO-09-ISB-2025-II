@@ -50,7 +50,7 @@ El generador en CGAN toma un vector de ruido aleatorio y una condición \(c\) (p
 El artículo aborda el problema del desbalance de datos en la predicción de corrosión de tuberías utilizando un modelo cGAN (Conditional Generative Adversarial Network). El dataset original contenía mediciones de corrosión de 250 tuberías enterradas en diferentes suelos, pero la mayoría de las muestras provenían de suelos arcillosos, con pocas muestras de suelos minoritarios. Esto dificultaba que los modelos de machine learning aprendieran patrones adecuados para los suelos con menos datos.
 
 <p align="center">
-  <img src="Imágenes/img_paper1.jpg" alt="Paper1" />
+  <img src="Imágenes/img_paper1.png" alt="Paper1" />
 </p>
 
 Se aplicaron tres técnicas de aumento de datos:
@@ -74,7 +74,7 @@ El cGAN es una técnica superior frente a métodos tradicionales de aumento de d
 El artículo propone P2E-WGAN, un modelo de aprendizaje profundo que utiliza una Wasserstein GAN condicional (cWGAN) para sintetizar señales de ECG a partir de PPG. La motivación detrás de este enfoque es utilizar la alta correlación entre ambas señales para generar ECG realistas a partir de PPG, lo que permite un monitoreo cardíaco accesible y económico usando dispositivos portátiles.
 
 <p align="center">
-  <img src="Imágenes/img_paper2.jpg" alt="Paper2" />
+  <img src="Imágenes/img_paper2.png" alt="Paper2" />
 </p>
 
 P2E-WGAN usa una arquitectura U-Net para el generador, que toma un segmento de PPG y genera una señal de ECG correspondiente. El discriminador PatchGAN evalúa la validez de la señal generada. El modelo optimiza tres funciones de pérdida: Wasserstein, L2 y una pérdida adicional de características para preservar los picos y valles característicos del ECG.
