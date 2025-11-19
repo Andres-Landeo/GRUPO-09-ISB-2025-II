@@ -4,6 +4,8 @@
 
 La generación de señales ECG sintéticas mediante Redes Generativas Antagónicas (GAN), Wasserstein GAN (WGAN) y Conditional GAN (CGAN) se ha convertido en una herramienta clave para mejorar los sistemas de diagnóstico médico, especialmente en el ámbito cardiovascular. Las redes generativas permiten la creación de señales de ECG artificiales que son útiles para entrenar modelos de aprendizaje automático, aumentar la diversidad de los datos y preservar la privacidad de los pacientes.
 
+![Introducción](Imágenes/img_intro.jpg)
+
 ## **1.1. GAN (Generative Adversarial Network)**
 Una GAN consiste en dos redes neuronales: un generador y un discriminador. El generador crea datos sintéticos (en este caso, señales ECG) a partir de una entrada aleatoria, mientras que el discriminador evalúa si las señales generadas son reales o falsas. Ambas redes compiten entre sí para mejorar la calidad de las señales generadas.
 
@@ -45,6 +47,8 @@ El generador en CGAN toma un vector de ruido aleatorio y una condición \(c\) (p
 ## **2.1. Data augmentation using conditional generative adversarial network (cGAN): Application for prediction of corrosion pit depth and testing using neural network [1]**
 El artículo aborda el problema del desbalance de datos en la predicción de corrosión de tuberías utilizando un modelo cGAN (Conditional Generative Adversarial Network). El dataset original contenía mediciones de corrosión de 250 tuberías enterradas en diferentes suelos, pero la mayoría de las muestras provenían de suelos arcillosos, con pocas muestras de suelos minoritarios. Esto dificultaba que los modelos de machine learning aprendieran patrones adecuados para los suelos con menos datos.
 
+![Paper1](Imágenes/img_paper1.png)
+
 Se aplicaron tres técnicas de aumento de datos:
 - Random Oversampling: Duplica las muestras de las clases minoritarias, pero no crea nueva información.
 - Borderline-SMOTE: Genera datos sintéticos de las clases minoritarias, pero con menor realismo.
@@ -65,6 +69,8 @@ El cGAN es una técnica superior frente a métodos tradicionales de aumento de d
 ## **2.2. P2E-WGAN: ECG Waveform Synthesis from PPG with Conditional Wasserstein Generative Adversarial Networks [2]**
 El artículo propone P2E-WGAN, un modelo de aprendizaje profundo que utiliza una Wasserstein GAN condicional (cWGAN) para sintetizar señales de ECG a partir de PPG. La motivación detrás de este enfoque es utilizar la alta correlación entre ambas señales para generar ECG realistas a partir de PPG, lo que permite un monitoreo cardíaco accesible y económico usando dispositivos portátiles.
 
+![Paper2](Imágenes/img_paper2.png)
+
 P2E-WGAN usa una arquitectura U-Net para el generador, que toma un segmento de PPG y genera una señal de ECG correspondiente. El discriminador PatchGAN evalúa la validez de la señal generada. El modelo optimiza tres funciones de pérdida: Wasserstein, L2 y una pérdida adicional de características para preservar los picos y valles característicos del ECG.
 
 ### Resultados:
@@ -77,6 +83,8 @@ P2E-WGAN demuestra ser una herramienta eficaz para sintetizar ECG a partir de PP
 
 ## **2.3. Generative adversarial network: An overview of theory and applications [3]**
 El artículo presenta una revisión sistemática sobre las Redes Generativas Antagónicas (GAN), un enfoque de aprendizaje profundo que utiliza dos redes neuronales: el generador, que crea datos sintéticos, y el discriminador, que evalúa si los datos son reales o falsos. Este modelo ha revolucionado diversos campos debido a su capacidad para generar datos de alta calidad que imitan distribuciones reales.
+
+![Paper3](Imágenes/img_3.jpg)
 
 Las GANs operan a través de la confrontación de dos redes:
 - Generador: Produce datos sintéticos (por ejemplo, imágenes, señales).
