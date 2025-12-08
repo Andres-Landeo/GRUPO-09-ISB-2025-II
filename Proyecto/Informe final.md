@@ -29,13 +29,17 @@ De acuerdo a este contexto, el presente proyecto busca desarrollar un sistema de
 ---
 
 ## **2. Antecedentes**
-Las técnicas de ML existen desde (), e incluyen a las de deep learning o IA que comenzaron su desarrollo en (). Estas técnicas consisten en la generación de una lógica de procesamiento de información con mínima intervención humana, ya sea por métodos iterativos, estadísticos, o combinados. Mientras que las técnicas de machine learning clásico dan énfasis al uso de herramientas estadísticas y conceptos como la entropía de la información para la creación de algoritmos de aprendizaje automatizado, las de deep learning se basan en el uso de redes neuronales para el mismo propósito, simplificando aún más el proceso al reducir la necesidad de diseño de algoritmos.
+Las ideas de las técnicas de machine learning (ML) existen desde 1943 e incluyen a las de deep learning, conocidas actualmente como inteligencia artificial (IA), que representan su origen conceptual [4]. Estas técnicas consisten en la generación de una lógica de procesamiento de información con mínima intervención humana, ya sea mediante métodos iterativos, estadísticos o combinados [4]. Mientras que las técnicas de ML sin redes neuronales enfatizan el uso de herramientas estadísticas y conceptos como la entropía de la información para crear algoritmos de aprendizaje automatizado, las técnicas de deep learning se basan en redes neuronales, lo que simplifica aún más el proceso al reducir la necesidad de diseñar explícitamente los algoritmos [4].
 
-Por ello, las técnicas de deep learning o IA, al usar redes neuronales que permiten elevadas cantidades de permutaciones y cambios en la comunicación entre nodos, tienen la propiedad de ser generalizables a cualquier contexto, y en la actualidad han mostrado mucho potencial con los métodos iterativos de aprendizaje al detectar grandes cantidades de patrones poco reconocibles para los humanos en datos no estructurados []. Sin embargo, tienen limitaciones importantes comparadas con el ML clásico: que requiere de una elevada cantidad de recursos computacionales, que la lógica de procesamiento de información tiene visibilidad prácticamente nula para el programador, y que son sensibles al overfitting y sesgo con poca capacidad de corregirlo que no sea aumentar o modificar los datos de entrenamiento, aumentar los recursos computacionales, o limitar las capacidades de aprendizaje.
+Las técnicas de deep learning, al utilizar redes neuronales capaces de realizar grandes cantidades de permutaciones y ajustes en la comunicación entre nodos, poseen la propiedad de ser altamente generalizables y han demostrado gran potencial para detectar patrones complejos en datos no estructurados [4]. Sin embargo, presentan limitaciones importantes frente al ML clásico: requieren recursos computacionales elevados, la lógica interna de procesamiento es prácticamente opaca para el programador y son más sensibles al overfitting y al sesgo, con menor capacidad para corregirlo sin aumentar o modificar los datos de entrenamiento, incrementar los recursos o restringir las capacidades de aprendizaje [4].
 
-Gracias a la cantidad de recursos requeridos por los sistemas basados en deep learning, es común que se apliquen solo con computadoras poderosas y a través de la nube, lo que limita la capacidad de detección en tiempo real por el tiempo de procesamiento, el costo, o los requerimientos de conexión a la red y la latencia. Por ello, las técnicas de ML clásico son las mejor adaptadas a sistemas ligeros y en tiempo real.
+Debido a las altas exigencias computacionales del deep learning, su implementación suele depender de computadoras potentes o servicios en la nube, lo cual limita su uso para detección en tiempo real debido a la latencia, el costo y la necesidad de conectividad. Por ello, las técnicas de ML clásico resultan más adecuadas para sistemas ligeros y de baja latencia, especialmente cuando se trabaja con datos estructurados [5].
 
-La técnica de Random Forest o de bosques aleatorios se basa en la generación de un conjunto o “ensemble” de árboles de decisión, que por su parte son construidos por algoritmos que se basan en el concepto de la entropía de la información (ej.: algoritmo ). Los árboles de decisión buscan hacer particiones sucesivas de los datos de entrenamiento, minimizando la entropía cada vez. Cada vez que una partición logra la clasificación adecuada, se detienen las particiones sucesivas a esa rama del árbol, continuando hasta que se cumpla para todas las ramas. Debido a que al generalizar este algoritmo cada partición o nodo en el árbol representará un probabilidad, los árboles de decisión requieren de una aleatorización.
+La técnica de Random Forest, o bosques aleatorios, se basa en la generación de un conjunto o ensemble de árboles de decisión, los cuales se construyen utilizando algoritmos que se apoyan en el concepto de entropía de la información [6]. Los árboles buscan realizar particiones sucesivas de los datos de entrenamiento, reduciendo la entropía en cada división [6]. Cuando una partición logra separar adecuadamente un grupo, se detiene la ramificación en esa dirección, continuando solo en las ramas necesarias.
+
+Cada nodo del árbol representa una probabilidad de pertenencia a una clase, por lo que los árboles requieren cierto grado de aleatorización en sus decisiones. Una ventaja importante es que la lógica de un árbol de decisión es observable y manipulable por el programador, permitiendo evaluar la relevancia de cada partición, detectar datos atípicos y realizar poda para eliminar ramas poco significativas o propensas a overfitting [6].
+
+Una vez generado el conjunto de árboles, cada uno entrenado con un subconjunto diferente de los datos que les confiere una perspectiva ligeramente distinta, Random Forest toma como resultado final la clasificación más frecuente entre todos ellos. Este proceso equivale a promediar decisiones, lo cual aumenta la capacidad de generalización del modelo y su resistencia al overfitting y al ruido [6].
 
 ---
 
@@ -93,10 +97,6 @@ Todos estos parámetros se consolidaron en una matriz de datos lista para clasif
 
 ## **6. Resultados**
 
-<p align="center">
-    <img src="Imágenes/img_ML.jpg" width='500'>
-</p>
-
 De observación de los datos:
 
 - La disminución en MNF y MDF indica fatiga.  
@@ -105,15 +105,14 @@ De observación de los datos:
 
 Del entrenamiento:
 
-- a  
-- b  
-- c  
-- d  
-- e  
+<p align="center">
+    <img src="Imágenes/img_ML.jpg" width='500'>
+</p>
+
 - Precisión de 73.91 %.  
 - Margen de error de 6 muestras.
 
-Los resultados obtenidos indican que las características EMG elegidas son efectivas para capturar patrones de activación y fatiga relevantes para evaluar la técnica en ejercicios de fuerza. La disminución sistemática de MNF y MDF coincide con estudios previos sobre fatiga muscular [3], mientras que las variaciones anómalas en RMS reflejan momentos de descontrol o compensación, coherentes con lo descrito en [4].
+Los resultados obtenidos indican que las características EMG elegidas son efectivas para capturar patrones de activación y fatiga relevantes para evaluar la técnica en ejercicios de fuerza. La disminución sistemática de MNF y MDF coincide con estudios previos sobre fatiga muscular [3], mientras que las variaciones anómalas en RMS reflejan momentos de descontrol o compensación, coherentes con lo descrito en [7].
 
 El modelo Random Forest demostró ser capaz de diferenciar ejecuciones correctas e incorrectas con un desempeño aceptable para una primera aproximación. Sin embargo, el rendimiento puede mejorar incorporando señales de mayor resolución, calibraciones individuales del MVC y técnicas de extracción de características más avanzadas.
 
@@ -137,11 +136,17 @@ El modelo Random Forest demostró ser capaz de diferenciar ejecuciones correctas
 ## **9. Referencias**
 [1] M. J. Y. Tung, G. A. Lantz, A. D. Lopes, and L. Berglund, “Injuries in weightlifting and powerlifting: an updated systematic review,” BMJ Open Sport & Exercise Medicine, vol. 10, no. 4, 2024, doi: 10.1136/bmjsem-2023-001884.
 
-[2] S. M. Cerqueira, R. Vilas Boas, J. Figueiredo, and C. P. Santos, “A comprehensive dataset of surface electromyography and self-perceived fatigue levels for muscle fatigue analysis,” Sensors, vol. 24, no. 24, p. 8081, 2024.
+[2] S. M. Cerqueira, R. Vilas Boas, J. Figueiredo, and C. P. Santos, “A comprehensive dataset of surface electromyography and self-perceived fatigue levels for muscle fatigue analysis,” Sensors, vol. 24, no. 24, p. 8081, 2024, doi: 10.3390/s24248081.
 
-[3] J. Sun et al., “Application of Surface Electromyography in Exercise Fatigue,” Frontiers in Systems Neuroscience, 2022.
+[3] J. Sun et al., “Application of Surface Electromyography in Exercise Fatigue,” Frontiers in Systems Neuroscience, 2022, doi: 10.3389/fnsys.2022.893275.
 
-[4] H. M. Qassim et al., “Proposed Fatigue Index for the Objective Detection of Muscle Fatigue Using Surface Electromyography,” Sensors, vol. 22, no. 5, p. 1900, 2022.
+[4] O. S. Ekundayo and A. E. Ezugwu, “Deep learning: Historical overview from inception to actualization, models, applications and future trends,” Applied Soft Computing, p. 113378, 2025, doi: 10.1016/j.asoc.2025.113378.
+
+[5] V. Sheth, U. Tripathi, and A. Sharma, “A comparative analysis of machine learning algorithms for classification purpose,” Procedia Computer Science, vol. 215, pp. 422–431, 2022, doi: 10.1016/j.procs.2022.12.044.
+
+[6] L. Breiman and A. Cutler, “RFtools – for predicting and understanding data,” in Interface Workshop, 2004, pp. 1–62.
+
+[7] H. M. Qassim et al., “Proposed Fatigue Index for the Objective Detection of Muscle Fatigue Using Surface Electromyography,” Sensors, vol. 22, no. 5, p. 1900, 2022, doi: 10.3390/s22051900.
 
 ---
 
