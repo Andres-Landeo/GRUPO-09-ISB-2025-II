@@ -57,6 +57,11 @@ Se propone un sistema basado en señales EMG y un modelo de clasificación tipo 
 ## **5. Materiales y Métodos**
 
 ### **5.1 Base de datos utilizada**
+
+<p align="center">
+    <img src="Imágenes/img_base.jpg" width='600'>
+</p>
+
 Se empleó el dataset público **A Comprehensive Dataset of Surface Electromyography and Self-Perceived Fatigue Levels for Muscle Fatigue Analysis**, que contiene señales EMG de 13 participantes realizando distintos movimientos de flexión con pesos ligeros [2].  
 Se registraron señales de bíceps braquial (derecho e izquierdo) y de las tres porciones del deltoides.
 
@@ -87,6 +92,11 @@ Todos estos parámetros se consolidaron en una matriz de datos lista para clasif
 ---
 
 ## **6. Resultados**
+
+<p align="center">
+    <img src="Imágenes/img_ML.jpg" width='600'>
+</p>
+
 De observación de los datos:
 
 - La disminución en MNF y MDF indica fatiga.  
