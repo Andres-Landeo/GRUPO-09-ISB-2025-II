@@ -1,5 +1,9 @@
 # **Clasificador de señal EMG para reconocer la correcta ejecución del ejercicio de levantar pesas en adultos**
 
+<p align="center">
+    <img src="Imágenes/img_titulo.jpg" width='400'>
+</p>
+
 ## **Resumen**
 Desarrollo de un sistema de monitoreo basado en señales EMG y la técnica de bosque aleatorio para clasificar la ejecución correcta o incorrecta durante ejercicios de levantamiento de pesas. Utilizando señales electromiográficas de músculos clave como el bíceps y deltoides, el sistema analiza la activación muscular y la fatiga para identificar patrones de mala técnica.
 
@@ -16,6 +20,11 @@ Estudios recientes muestran que en actividades de levantamiento de pesas, las zo
 La electromiografía superficial (EMG) permite medir objetivamente la activación muscular en tiempo real, lo que permite ofrecer una alternativa precisa y no invasiva para evaluar la calidad del movimiento. La literatura demuestra que características como RMS, iEMG, MNF y MDF pueden capturar cambios relevantes asociados al esfuerzo y la fatiga muscular [2], [3].
 
 De acuerdo a este contexto, el presente proyecto busca desarrollar un sistema de clasificación basado en machine learning para diferenciar ejecuciones correctas e incorrectas durante el levantamiento de pesas, empleando características derivadas de señales EMG.
+
+<p align="center">
+  <img src="Imágenes/img_intro1.jpg" width="350">
+  <img src="Imágenes/img_intro2.jpg" width="350">
+</p>
 
 ---
 
@@ -37,6 +46,11 @@ A pesar de la alta prevalencia de lesiones relacionadas con ejercicios de fuerza
 
 ## **4. Propuesta de solución**
 Se propone un sistema basado en señales EMG y un modelo de clasificación tipo Random Forest que pueda ser capaz de distinguir entre ejecuciones correctas e incorrectas durante el levantamiento de pesas. El sistema utiliza las señales EMG de bíceps y deltoides, a partir de las cuales se extraen características temporales y espectrales. Estas características se incorporan a un modelo de machine learning entrenado para identificar patrones que estén asociados a fatiga o pérdida de control, indicadores que ayudan a identificar una incorrecta ejecución del ejercicio para posteriormente generar alertas en tiempo real.
+
+<p align="center">
+  <img src="Imágenes/img_propuesta.jpg" width="350">
+  <img src="Imágenes/random_forest.jpg" width="350">
+</p>
 
 ---
 
