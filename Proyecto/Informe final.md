@@ -22,8 +22,8 @@ La electromiografía superficial (EMG) permite medir objetivamente la activació
 De acuerdo a este contexto, el presente proyecto busca desarrollar un sistema de clasificación basado en machine learning para diferenciar ejecuciones correctas e incorrectas durante el levantamiento de pesas, empleando características derivadas de señales EMG.
 
 <p align="center">
-  <img src="Imágenes/img_intro1.jpg" width="400" height='300'>
-  <img src="Imágenes/img_intro2.jpg" width="400" height='300'>
+  <img src="Imágenes/img_intro1.jpg" width="400">
+  <img src="Imágenes/img_intro2.jpg" width="400">
 </p>
 
 ---
