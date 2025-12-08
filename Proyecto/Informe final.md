@@ -1,7 +1,7 @@
 # **Clasificador de señal EMG para reconocer la correcta ejecución del ejercicio de levantar pesas en adultos**
 
 <p align="center">
-    <img src="Imágenes/img_titulo.jpg" width='400'>
+    <img src="Imágenes/img_titulo.jpg" width='600' height='400'>
 </p>
 
 ## **Resumen**
@@ -22,8 +22,8 @@ La electromiografía superficial (EMG) permite medir objetivamente la activació
 De acuerdo a este contexto, el presente proyecto busca desarrollar un sistema de clasificación basado en machine learning para diferenciar ejecuciones correctas e incorrectas durante el levantamiento de pesas, empleando características derivadas de señales EMG.
 
 <p align="center">
-  <img src="Imágenes/img_intro1.jpg" width="350">
-  <img src="Imágenes/img_intro2.jpg" width="350">
+  <img src="Imágenes/img_intro1.jpg" width="400" height='300'>
+  <img src="Imágenes/img_intro2.jpg" width="400" height='300'>
 </p>
 
 ---
